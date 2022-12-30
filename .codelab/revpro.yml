@@ -33,8 +33,8 @@
     checkoutLocation: pep-gitpod-workspace
     upstreamRemoteURI: https://github.com/revature-curriculum/pep-gitpod-workspace.git
   :gitpod_workspace:
-    :workspace_id: manuela7-pepgitpodworks-hxl6svnagsz
-    :workspace_url: https://manuela7-pepgitpodworks-hxl6svnagsz.ws-us80.gitpod.io
+    :workspace_id: manuela7-pepgitpodworks-l510zfxrrvq
+    :workspace_url: https://manuela7-pepgitpodworks-l510zfxrrvq.ws-us80.gitpod.io
     :repo_root: "/workspace/pep-gitpod-workspace"
     :git_user_email: arcineda7@gmail.com
     :git_user_name: ManuelA7

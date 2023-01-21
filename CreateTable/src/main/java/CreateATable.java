@@ -72,13 +72,6 @@ public class CreateATable {
 
         String sql = FileUtil.parseSQLFile("problem1.sql");
 
-        sql = "CREATE TABLE song " +
-        "(id INTEGER not NULL, " +
-        " Title VARCHAR(255), " + 
-        " Artist VARCHAR(255), "  + 
-        " PRIMARY KEY ( id ))"; 
-
-
         try {
             Connection connection = ConnectionUtil.getConnection();
             Statement s = connection.createStatement();
@@ -87,6 +80,8 @@ public class CreateATable {
             System.out.println("problem1: " + e.getMessage() + '\n');
         }
     }
+
+
 
 
 }

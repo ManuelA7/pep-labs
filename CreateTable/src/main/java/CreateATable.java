@@ -1,8 +1,10 @@
 
+
 import Util.ConnectionUtil;
 import Util.FileUtil;
 
 import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -62,11 +64,17 @@ public class CreateATable {
      *     |'Hotel California' |'Eagles'               |
      *     |'Kashmir'          |'Led Zeppelin'         |
      */
+   
+ 
+
+
     public void problem1(){
+
         String sql = FileUtil.parseSQLFile("problem1.sql");
 
         try {
-            Connection connection = ConnectionUtil.getConnection();
+            sq1.execute(CREATE TABLE song(title varchar(100), artist datatype 
+            Connection = ConnectionUtil.getConnection();
             Statement s = connection.createStatement();
             s.executeUpdate(sql);
         } catch (SQLException e) {

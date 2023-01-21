@@ -1,0 +1,1 @@
+INSERT INTO song ("col_1") VALUES ("val_1");

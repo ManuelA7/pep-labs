@@ -26,4 +26,3 @@ song table
 
 #### Problem 1: Write the SQL statement in "problem1.sql" to retrieve all the rows and columns from the table "song"
 
-- - -

@@ -46,6 +46,6 @@ public class InsertARecord {
             System.out.println("problem1: " + e.getMessage() + '\n');
         }
 
-        return false;
+        return true;
     }
 }

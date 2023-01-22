@@ -32,7 +32,7 @@ public class GroceryDAO {
             PreparedStatement ps = connection.prepareStatement(sql);
             ResultSet rs = ps.executeQuery();
             while(rs.next()){
-                groceries.add(rs.getString("groceryname"));
+                groceries.add(rs.getString("grocery_Name"));
             }
         }catch(SQLException e){
             e.printStackTrace();
@@ -42,13 +42,13 @@ public class GroceryDAO {
     /**
      * TODO: Insert a new row into the Grocery table, with the sole column containing groceryName.
      * You only need to change the sql String, the rest of the method is already complete.
-     * @param groceryName the name of the grocery passed in from the GroceryService.
+     * @param grocery_Name the name of the grocery passed in from the GroceryService.
      */
-    public void addGrocery(String groceryName){
+    public void addGrocery(String grocery_Name){
         Connection connection = ConnectionUtil.getConnection();
         try {
             //Write SQL logic here
-            String sql = "INSERT into groceries (groceryname) VALUES ('apples')";
+            String sql = "INSERT into groceries (grocery_Name) VALUES ('apples')";
             PreparedStatement ps = connection.prepareStatement(sql);
             ps.executeUpdate();
         }catch(SQLException e){

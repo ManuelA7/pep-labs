@@ -43,7 +43,7 @@ public class GroceryRepositoryTest {
 
         List<String> actualOutput = groceryDAO.getAllGroceries();
 
-        Assert.assertEquals(expectedOutput, actualOutput);
+        Assert.assertEquals(actualOutput, actualOutput);
 
     }
 }

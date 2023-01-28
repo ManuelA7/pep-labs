@@ -1,26 +1,26 @@
 
 import java.util.Objects;
 
-public class Song {
+public class song {
     private Integer id;
     private String artist;
     private String album;
     private String song;
 
-    public Song(Integer id, String artist, String album, String song) {
+    public song(Integer id, String artist, String album, String song) {
         this.id = id;
         this.artist = artist;
         this.album = album;
         this.song = song;
     }
 
-    public Song(String artist, String album, String song) {
+    public song(String artist, String album, String song) {
         this.artist = artist;
         this.album = album;
         this.song = song;
     }
 
-    public Song() {
+    public song() {
     }
 
     public Integer getId() {
@@ -59,7 +59,7 @@ public class Song {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Song song1 = (Song) o;
+        song song1 = (song) o;
         return Objects.equals(id, song1.id) && Objects.equals(artist, song1.artist) && Objects.equals(album, song1.album) && Objects.equals(song, song1.song);
     }
 
@@ -70,7 +70,7 @@ public class Song {
 
     @Override
     public String toString() {
-        return "Song{" +
+        return "song{" +
                 "id=" + id +
                 ", artist='" + artist + '\'' +
                 ", album='" + album + '\'' +

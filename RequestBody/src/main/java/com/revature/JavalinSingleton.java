@@ -1,6 +1,7 @@
 package com.revature;
 
 import io.javalin.Javalin;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
  * Background: A json string representing a song will be sent in this POST request with the following fields: 
@@ -17,7 +18,11 @@ public class JavalinSingleton {
          * Note: Please refer to the "RequestBody.MD" file for more assistance if needed.
          */
         app.post("/problem1", ctx -> {
-                //implement logic here
+            String jsonString = ctx.body();//implement logic here
+            ObjectMapper om = new ObjectMapper();
+            Song user = om.readValue(jsonString, Song.class);
+            ctx.contentType("application/json"); 
+            ctx.result(user.getArtistName());
         });
 
         /**
@@ -29,6 +34,16 @@ public class JavalinSingleton {
          */
         app.post("/problem2", ctx -> {
                //implement logic here
+               String jsonString = ctx.body();//implement logic here
+               ObjectMapper om = new ObjectMapper();
+               Song user = om.readValue(jsonString, Song.class);
+               ctx.contentType("application/json"); 
+
+               user.setArtistName("Beatles");
+               user.setSongName("Paint it Black");
+               String jsonStringToBeReturned = om.writeValueAsString(user);
+
+               ctx.result(jsonStringToBeReturned);
         });
 
 

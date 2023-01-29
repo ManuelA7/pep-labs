@@ -13,7 +13,6 @@ public class JavalinSingleton {
 
     public static Javalin getInstance(){
        Javalin app = Javalin.create();
-        app.start(9000); 
 
         //write endpoint here
         // HTTP GET REQUEST to http://localhost:9000/get-request

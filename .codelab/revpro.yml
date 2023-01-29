@@ -40,12 +40,12 @@
     :git_user_name: ManuelA7
 :progress:
   :count_labs_total: 96
-  :count_labs_passed: 1
+  :count_labs_passed: 0
   :count_tests_total: 361
-  :count_tests_passed: 1
+  :count_tests_passed: 0
 :progress_test:
   :count_tests_total: 361
-  :count_tests_passed: 1
+  :count_tests_passed: 0
   Start:
     :Week: 1
     :Order: 1
@@ -176,9 +176,11 @@
     :Order: 2
     :Type: lab
     :count_tests: 1
-    :count_tests_passed: 1
+    :count_tests_passed: 0
     :tests:
       testObjectNotNull: 1
+      problem1aTest: 0
+      problem1bTest: 0
   Constructors:
     :Week: 2
     :Order: 3
